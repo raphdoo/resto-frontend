@@ -1,3 +1,5 @@
+
+
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
@@ -22,6 +24,8 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import sign2 from '../assets/sign2.jpg';
 
+
+// eslint-disable-next-line
 export default {
   bg,
   chef,

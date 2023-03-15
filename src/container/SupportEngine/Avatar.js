@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import chatbot from '../../assets/chatbot.png';
 
 import './styles.css'

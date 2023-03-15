@@ -39,7 +39,7 @@ const SupportWindow = ({visible, socket}) => {
                 message: currentMessage,
                 time: new Date(Date.now()).getHours() + ":" + new Date(Date.now()).getMinutes()
             };
-            if (currentMessage == "99" || currentMessage == "97" || currentMessage == "0"){
+            if (currentMessage === "99" || currentMessage === "97" || currentMessage === "0"){
                 if(currentOrder.length > 1 ){
                     messageData.currentOrder = currentOrder
                 }
@@ -60,7 +60,7 @@ const SupportWindow = ({visible, socket}) => {
                     data.message = 'Please enter a valid value'   
                 }
 
-                if (foodStore.find(el => el.name == data.order)){
+                if (foodStore.find(el => el.name === data.order)){
                     setCurrentOrder(data.order)
                 }
 
@@ -99,7 +99,7 @@ const SupportWindow = ({visible, socket}) => {
                     {
                         messageList.map((messageContent, index)=>{
                             return (
-                                <div className='message' key={messageContent.message + index} id={ index%2 == 0 ? "other" : "you"}>
+                                <div className='message' key={messageContent.message + index} id={ index%2 === 0 ? "other" : "you"}>
                                     <div className={`${(messageContent.metaData && messageContent.metaData.length) ? 'metadata-container' : 'message-content'}`}>
                                         {messageContent.metaData && messageContent.metaData.length && <p style={{marginBottom:"10px", fontWeight:"bold", fontSize:"14px"}}>{messageContent.message}</p>}
                                         {
