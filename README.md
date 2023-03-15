@@ -1,4 +1,4 @@
-# A restaurant UI design with a chotbot engine
+# A restaurant UI design with a chatbot engine
 
 https://chefbot.onrender.com/
 
@@ -13,6 +13,12 @@ This chatbot assists customers with placing orders for their preferred meals.
   <a href="">![React](https://img.shields.io/badge/-ReactJs-%23323330.svg?style=for-the-badge&logo=react&logoColor=white)</a>
   <a href="">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)</a>
   
+  
+</div>
+
+<div align="center">
+
+  <a href="">![Git](https://img.shields.io/badge/git-%234ea94b.svg?style=for-the-badge&logo=git&logoColor=white)</a>
   
 </div>
 
