@@ -5,7 +5,7 @@ import SupportWindow from './SupportWindow';
 
 import Avatar from './Avatar';
 
-const socket = io.connect("http://localhost:4000")
+const socket = io.connect(process.env.REACT_APP_SERVER_URL || "http://localhost:4000")
 
 const SupportEngine = () => {
     const [visible, setVisible] = useState(false)
