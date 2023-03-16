@@ -45,15 +45,12 @@
 }
 
 .avatar img{
-  animation: animateUser 4s ease-in infinite;
+  animation: animateUser 1s ease infinite;
 }
 
 @keyframes animateUser{
   50%{
-    width:65%
-  }
-  100%{
-    width: 70%;
+    width:70%
   }
   
 }
