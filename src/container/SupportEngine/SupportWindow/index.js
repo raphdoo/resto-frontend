@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
 
+
 import chatbot from '../../../assets/chatbot.png';
 
 import "../styles.css";
@@ -14,11 +15,11 @@ const options = [
   ];
 
 const  foodStore = [
-    {id: "1", name: "Ofada rice", price: "$1000"},
-    {id: "2", name: "Burger", price: "$1500"},
-    {id: "3", name: "Chicken", price: "$2000"},
-    {id: "4", name: "Plantain", price: "$1500"},
-    {id: "5", name: "Pounded yam", price: "$500"}
+    {id: "1", name: "Ofada rice", price: "$10"},
+    {id: "2", name: "Burger", price: "$15"},
+    {id: "3", name: "Chicken", price: "$20"},
+    {id: "4", name: "Plantain", price: "$15"},
+    {id: "5", name: "Pounded yam", price: "$10"}
 
 ]
 
@@ -29,8 +30,6 @@ const SupportWindow = ({visible, socket}) => {
     const [currentMessage, setCurrentMessage] = useState("")
     const [messageList, setMessageList] = useState([])
     const [currentOrder, setCurrentOrder] = useState('')
-
-    
 
 
     const sendMessage = async() => {
@@ -72,7 +71,8 @@ const SupportWindow = ({visible, socket}) => {
 
 
     return (
-        <div className={`chat-window ${visible ? "display" : ""}`} >
+        // <div className={`chat-window display}`} >
+            <div className={`chat-window ${visible ? "display" : ""}`} >
 
             <div className='chat-header'>
                 <img src={chatbot} style={{width:"40px", height:"40px"}} alt="chatbot"/>

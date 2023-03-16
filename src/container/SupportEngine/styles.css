@@ -4,7 +4,7 @@
 }
 
 .chat-window {
-    width: 350px;
+    width: 380px;
     height: 420px;
     background-color: var(--color-crimson);
     border-top: 5px solid var(--color-golden);
@@ -15,24 +15,27 @@
 
 .avatar-area {
     display: flex;
+
     align-items: center;
     margin-top: 2rem;
     justify-content: flex-end;
     cursor: pointer;
     
 }
+.avatar-area p{
+  font-size: 20px;
+}
 .avatar-text{
-    font-size: 14px;
     color: var(--color-crimson);
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     letter-spacing: 0.5px;
     font: var(--font-base);
     font-weight: 400;
 }
 
 .avatar{
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 100px;
     /* border: 3px solid var(--color-crimson); */
     display:flex;
     justify-content: center;
@@ -40,20 +43,17 @@
     border-radius: 50%;
 }
 
-.avatar:hover{
-    border: 1px solid var(--color-crimson);
-}
 
-.avatar img{
+/* .avatar img{
   animation: animateUser 1s ease infinite;
-}
+} */
 
-@keyframes animateUser{
+/* @keyframes animateUser{
   50%{
     width:70%
   }
   
-}
+} */
 
 .display{
     display: flex
@@ -229,4 +229,20 @@
   }
   .hide {
     opacity: 0 !important;
+  }
+
+  @media screen and (max-width: 850px){
+    .avatar-area{
+      flex-direction: column;
+    }
+    .avatar{
+      margin-top: 2rem;
+    }
+    .avatar-text{
+      text-align: center;
+    }
+    .avatar-text p{
+      font-size: 18px;
+      line-height: 1.5rem;
+    }
   }
